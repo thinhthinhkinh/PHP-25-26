@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chương 2 - Truyền biến</title>
+    <title>Practice 2</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #00008b 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 40px 20px;
         }
@@ -29,7 +29,7 @@
         }
         .back-link {
             display: inline-block;
-            color: #667eea;
+            color: #00008b;
             text-decoration: none;
             margin-bottom: 15px;
             font-weight: bold;
@@ -64,7 +64,7 @@
             font-size: 0.95em;
         }
         .btn {
-            background: #667eea;
+            background: #00008b;
             color: white;
             padding: 10px 25px;
             text-decoration: none;
@@ -94,51 +94,70 @@
     <div class="container">
         <div class="header">
             <a href="../" class="back-link">← Quay lại trang chủ</a>
-            <h1> Chương 2: Truyền biến</h1>
-            <p>Phân biệt được phương pháp truyền biến cơ bản - Vận dụng truyền biến qua form và thông qua đường liên kết (link)</p>
+            <h1> Practice 2</h1>
             <p><strong>Ngày:</strong> <?php echo date('d/m/Y'); ?></p>
         </div>
         
         <div class="exercises">
-            <!-- Bài 2.1 -->
+            <!-- Bài 1 -->
             <div class="exercise-item">
                 <div class="exercise-info">
-                    <h3>Bài 2.1: Truyền biến <span class="status-badge completed">Đã làm</span></h3>
-                    <p>Sử dụng textbox để truyền biến, cho phép người dùng nhập thông tin</p>
+                    <h3>Bài 1<span class="status-badge completed">Đã làm</span></h3>
                 </div>
-                <a href="bai2_1/" class="btn">Xem</a>
+                <a href="bai1/" class="btn">Xem</a>
             </div>
-            <!-- Bài 1.2 -->
+            <!-- Bài 2 -->
             <div class="exercise-item">
                 <div class="exercise-info">
-                    <h3>Bài 2.2: Biến và Kiểu Dữ Liệu <span class="status-badge completed">Đã làm</span></h3>
-                    <p>Khai báo và hiển thị các loại biến</p>
+                    <h3>Bài 2<span class="status-badge completed">Đã làm</span></h3>
                 </div>
-                <a href="bai2_2/" class="btn">Xem</a>
+                <a href="bai2/" class="btn">Xem</a>
             </div>
-            <!-- Bài 1.3 -->
+            <!-- Bài 3 -->
             <div class="exercise-item">
                 <div class="exercise-info">
-                    <h3>Bài 2.3: Toán Tử Cơ Bản <span class="status-badge completed">Đã làm</span></h3>
-                    <p>Tính tổng, hiệu, tích, thương</p>
+                    <h3>Bài 3<span class="status-badge completed">Đã làm</span></h3>
                 </div>
-                <a href="bai2_3/" class="btn">Xem</a>
+                <a href="bai3/" class="btn">Xem</a>
             </div>
-            <!-- Bài 1.4 -->
+            <!-- Bài 4 -->
             <div class="exercise-item">
                 <div class="exercise-info">
-                    <h3>Bài 2.4: Loop <span class="status-badge completed">Đã làm</span></h3>
-                    <p></p>
+                    <h3>Bài 4<span class="status-badge completed">Đã làm</span></h3>
                 </div>
-                <a href="bai2_4/" class="btn">Xem</a>
+                <a href="bai4/" class="btn">Xem</a>
             </div>
-            <!--Bài 1.5-->
+            <!--Bài 5-->
             <div class="exercise-item">
                 <div class="exercise-info">
-                    <h3>Bài 2.5: Table <span class="status-badge completed">Đang làm</span></h3>
-                    <p>Form</p>
+                    <h3>Bài 5<span class="status-badge completed">Đang làm</span></h3>
+
                 </div>
-                <a href="bai2_5/" class="btn">Xem</a>
+                <a href="bai5/" class="btn">Xem</a>
+            </div>
+            <!--Bài 6-->
+            <div class="exercise-item">
+                <div class="exercise-info">
+                    <h3>Bài 6<span class="status-badge completed">Đang làm</span></h3>
+
+                </div>
+                <a href="bai6/" class="btn">Xem</a>
+            </div>
+            <!--Bài 7-->
+            <div class="exercise-item">
+                <div class="exercise-info">
+                    <h3>Bài 7<span class="status-badge completed">Đang làm</span></h3>
+
+                </div>
+                <a href="bai7/" class="btn">Xem</a>
+            </div>
+            <!--Bài 8-->
+            <div class="exercise-item">
+                <div class="exercise-info">
+                    <h3>Bài 8<span class="status-badge completed">Đang làm</span></h3>
+
+                </div>
+                <a href="bai8/" class="btn">Xem</a>
             </div>
         </div>
     </div>

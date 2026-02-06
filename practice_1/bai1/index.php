@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài 2.1</title>
+    <title>Bài 1</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1.1 - Hello PHP</title>
     <style>
         *{
             margin: 0;
@@ -49,21 +57,25 @@
             background: #00008b;
             color: white;
         }
-        form{
-            height: 10px;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Bài 2.1 - Truyền biến</h1>
+        <h1> Bài 1</h1>
+        
         <div class="message">
-            <form action="nhanbien.php" Method="GET">
-                Từ khóa: <input type="text" name="textBien"/>
-                <input type="submit" value="Tìm">
-            </form>
+            <?php
+                $x = random_int(0, 100);
+                $y = random_int(50, 100);
+
+                echo "<p>Giá trị của x là: $x</p>";
+                echo "<p>Giá trị của y là: $y</p>";
+            ?>
         </div>
+        
         <a href="../" class="back-link">← Quay lại</a>
     </div>
+</body>
+</html>
 </body>
 </html>

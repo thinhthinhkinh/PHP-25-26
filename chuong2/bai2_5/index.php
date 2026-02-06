@@ -31,7 +31,6 @@
         }
         .content-wrapper {
             background: white;
-            border-radius: 0 0 15px 15px;
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             overflow: hidden;
         }
@@ -46,7 +45,7 @@
             border-right: 2px solid #dee2e6;
         }
         .menu h5 {
-            color: #667eea;
+            color: #00008b;
             margin-bottom: 20px;
             font-weight: bold;
         }
@@ -60,7 +59,7 @@
             transition: all 0.3s;
         }
         .menu-item:hover {
-            background: #667eea;
+            background: #00008b;
             color: white;
             transform: translateX(5px);
         }
@@ -78,10 +77,10 @@
             margin-bottom: 30px;
         }
         .form-section h5 {
-            color: #667eea;
+            color: #00008b;
             margin-bottom: 20px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #667eea;
+            border-bottom: 2px solid #00008b;
         }
         .form-label {
             font-weight: 600;
@@ -95,11 +94,11 @@
             transition: all 0.3s;
         }
         .form-control:focus, .form-select:focus {
-            border-color: #667eea;
+            border-color: #00008b;
             box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
         }
         .btn-submit {
-            background: #667eea;
+            background: #00008b;
             color: white;
             padding: 12px 40px;
             border: none;
@@ -133,13 +132,13 @@
         }
         .result-box {
             background: #e7f3ff;
-            border: 2px solid #667eea;
+            border: 2px solid #00008b;
             border-radius: 10px;
             padding: 30px;
             margin-top: 30px;
         }
         .result-box h4 {
-            color: #667eea;
+            color: #00008b;
             margin-bottom: 20px;
         }
         .result-box p {
@@ -415,7 +414,7 @@
         
         <!-- Footer -->
         <div class="footer">
-            <p class="mb-0">Footer website - Bài 2.5: Form Đăng Ký | 
+            <p class="mb-0">Footer website 
                 <a href="../" style="color: #667eea; text-decoration: none;">← Quay lại</a>
             </p>
         </div>

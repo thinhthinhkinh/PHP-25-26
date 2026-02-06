@@ -13,7 +13,7 @@
         }
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #00008b 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 40px 20px;
             display: flex;
@@ -28,7 +28,7 @@
             overflow: hidden;
         }
         .calculator-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #00008b 0%, #764ba2 100%);
             color: white;
             padding: 30px;
             text-align: center;
@@ -59,7 +59,7 @@
         }
         .input-group-custom input:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: #00008b;
             box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
         }
         .operators {
@@ -70,8 +70,8 @@
         }
         .operator-btn {
             background: white;
-            border: 3px solid #667eea;
-            color: #667eea;
+            border: 3px solid #00008b;
+            color: #00008b;
             padding: 20px;
             font-size: 1.8em;
             font-weight: bold;
@@ -80,7 +80,7 @@
             transition: all 0.3s;
         }
         .operator-btn:hover {
-            background: #667eea;
+            background: #00008b;
             color: white;
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
@@ -92,12 +92,12 @@
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             padding: 25px;
             border-radius: 12px;
-            border: 3px solid #667eea;
+            border: 3px solid #00008b;
             text-align: center;
             margin-top: 30px;
         }
         .result-box h4 {
-            color: #667eea;
+            color: #00008b;
             margin-bottom: 15px;
         }
         .result-text {
@@ -113,12 +113,12 @@
             background: #f8f9fa;
             border-radius: 10px;
             text-decoration: none;
-            color: #667eea;
+            color: #00008b;
             font-weight: bold;
             transition: all 0.3s;
         }
         .back-link:hover {
-            background: #667eea;
+            background: #00008b;
             color: white;
         }
     </style>

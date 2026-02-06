@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài 2.1</title>
+    <title>Bài 2</title>
+    <link rel="stylesheet" href="../../bootstrap-5.3.8-dist/css/bootstrap.min.css">
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1.1 - Hello PHP</title>
     <style>
         *{
             margin: 0;
@@ -49,21 +58,34 @@
             background: #00008b;
             color: white;
         }
-        form{
-            height: 10px;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Bài 2.1 - Truyền biến</h1>
-        <div class="message">
-            <form action="nhanbien.php" Method="GET">
-                Từ khóa: <input type="text" name="textBien"/>
-                <input type="submit" value="Tìm">
-            </form>
-        </div>
+        <h1> Bài 4</h1>
+        <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>i</th>
+                            <th>Tên sách</th>
+                            <th>Nội dung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                            for($i = 1; $i <=100; $i++){
+                                echo "<tr>";
+                                echo "<td>$i</td>";
+                                echo "<td>Tên sách" .$i."</td>";
+                                echo "<td>Nội dung" .$i."</td>";
+                                echo "</tr>";
+                            }
+                        ?>
+                    </tbody>
+                </table>
         <a href="../" class="back-link">← Quay lại</a>
     </div>
+</body>
+</html>
 </body>
 </html>

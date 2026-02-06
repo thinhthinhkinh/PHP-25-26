@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4 - Cạnh Huyền Tam Giác Vuông</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            padding: 50px 20px;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        h3 {
+            text-align: left;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .form-box {
+            background: #ffe4b5;
+            padding: 30px;
+            border: 1px solid #ddd;
+        }
+        
+        .form-title {
+            background: linear-gradient(to right, #ff9933, #ffcc66);
+            color: #8b4513;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border: 1px solid #cc7722;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .form-group label {
+            width: 120px;
+            font-weight: normal;
+        }
+        
+        .form-group input {
+            flex: 1;
+            padding: 5px;
+            border: 1px solid #999;
+            font-size: 1rem;
+        }
+        
+        .result-input {
+            background: #ffcccc !important;
+        }
+        
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        button {
+            padding: 5px 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            border: 1px solid #666;
+            background: #ddd;
+        }
+        
+        button:hover {
+            background: #ccc;
+        }
+        .back-link{
+            display: inline-block;
+            margin-top: 25px;
+            color: #00008b;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: 2px solid #00008b;
+            border-radius: 8px;
+            padding: 12px 25px;
+        }
+        .back-link:hover{
+            background: #00008b;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3><i>Bài 4</i></h3>
+        
+        <div class="form-box">
+            <div class="form-title">CẠNH HUYỀN TAM GIÁC VUÔNG</div>
+            
+            <?php
+            $canhA = '';
+            $canhB = '';
+            $canhHuyen = '';
+            
+            // Xử lý khi form được submit
+            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                $canhA = $_POST['canh_a'];
+                $canhB = $_POST['canh_b'];
+                
+                // c² = a² + b²
+                // c = √(a² + b²)
+                if (is_numeric($canhA) && is_numeric($canhB) && $canhA > 0 && $canhB > 0) {
+                    $canhHuyen = sqrt(pow($canhA, 2) + pow($canhB, 2));
+                    
+                    // Làm tròn kết quả 2 chữ số thập phân
+                    $canhHuyen = round($canhHuyen, 2);
+                }
+            }
+            ?>
+            
+            <form method="POST" action="">
+                <div class="form-group">
+                    <label>Cạnh A:</label>
+                    <input type="text" name="canh_a" value="<?php echo $canhA; ?>">
+                </div>
+                
+                <div class="form-group">
+                    <label>Cạnh B:</label>
+                    <input type="text" name="canh_b" value="<?php echo $canhB; ?>">
+                </div>
+                
+                <div class="form-group">
+                    <label>Cạnh huyền:</label>
+                    <input type="text" class="result-input" value="<?php echo $canhHuyen; ?>" readonly>
+                </div>
+                
+                <div class="button-container">
+                    <button type="submit">Tính</button>
+                </div>
+            </form>
+        </div>
+        <a href="../" class="back-link">← Quay lại</a>
+    </div>
+</body>
+</html>

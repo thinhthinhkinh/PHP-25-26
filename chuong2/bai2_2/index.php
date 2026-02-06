@@ -13,7 +13,7 @@
         }
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, white 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -25,7 +25,7 @@
             width: 100%;
         }
         .banner {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #00008b 0%, #764ba2 100%);
             color: white;
             padding: 30px;
             text-align: center;
@@ -34,7 +34,6 @@
         }
         .content-wrapper {
             background: white;
-            border-radius: 0 0 15px 15px;
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             overflow: hidden;
         }
@@ -49,7 +48,7 @@
             border-right: 2px solid #dee2e6;
         }
         .menu h5 {
-            color: #667eea;
+            color: #00008b;
             margin-bottom: 20px;
             font-weight: bold;
         }
@@ -63,13 +62,9 @@
             transition: all 0.3s;
         }
         .menu-item:hover {
-            background: #667eea;
+            background: #00008b;
             color: white;
-            transform: translateX(5px);
-        }
-        .menu-item.active {
-            background: #667eea;
-            color: white;
+            /* transform: translateX(5px); */
         }
         .content-area {
             padding: 50px;
@@ -90,11 +85,11 @@
             transition: all 0.3s;
         }
         .form-control:focus {
-            border-color: #667eea;
+            border-color: #00008b;
             box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
         }
         .btn-login {
-            background: #667eea;
+            background: #00008b;
             color: white;
             padding: 12px 40px;
             border: none;
@@ -139,15 +134,15 @@
         .back-link{
             display: inline-block;
             margin-top: 25px;
-            color: #667eea;
+            color: #00008b;
             text-decoration: none;
             transition: all 0.3s;
-            border: 2px solid #667eea;
+            border: 2px solid #00008b;
             border-radius: 8px;
             padding: 12px 25px;
         }
         .back-link:hover{
-            background: #667eea;
+            background: #00008b;
             color: white;
         }
     </style>
@@ -173,7 +168,7 @@
                 
                 <!-- Content Area -->
                 <div class="content-area">
-                    <h2 class="text-center mb-4" style="color: #667eea;">THÔNG TIN ĐĂNG NHẬP</h2>
+                    <h2 class="text-center mb-4" style="color: #00008b;">THÔNG TIN ĐĂNG NHẬP</h2>
                     
                     <?php
                     // Xử lý đăng nhập
@@ -253,16 +248,6 @@
                                 </div>
                             </div>
                         </form>
-                        
-                        <div class="text-center mt-4">
-                            <p class="text-muted">
-                                <small>
-                                    <strong>Thông tin test:</strong><br>
-                                    Email: abc@gmail.com<br>
-                                    Password: 123456
-                                </small>
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
